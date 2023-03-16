@@ -1,0 +1,92 @@
+<div style="padding: 1rem; background-color: rgb(233, 233, 230, 0.5); color:#333333; font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;">
+    <div style="text-align: center;"><img src="https://farziengineer.com/wp-content/uploads/2021/08/Black-trans-e1629725457518-1536x399.png" alt="farzi logo" style="width:130px; aspect-ratio: 512/133; margin: auto; padding: 1.5rem 0;"></div>
+    <div style="padding: 1.5rem; background-color: #fff; box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%); text-align: center;">
+        <h1>{recipientName}, here's your
+            weekly snapshot</h1>
+            <br>
+            <button style="background-color: #6c7ae0; padding: 0rem 1.2rem; border: 1px solid #6c7ae0;"><a href="/viewfullReport" style="color: #fff; text-decoration: none;"><h3>SEE FULL REPORT</h3></a></button>
+        </div>
+        <br><br>
+        <div style="background-color: #fff; padding: 1rem;">
+            <h3>Weekly sales report for the period of {timePeriod} have been listed below:</h3>
+  <br />
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem">
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+      "
+    >
+      <h4
+        style="
+          padding: 0.3rem 1rem;
+          margin: auto;
+          font-size: 0.9rem;
+        "
+      >
+        Total Sales
+      </h4>
+      <h2 style="padding: 0.8rem 1rem; margin: auto; color: #6c7ae0;">
+        &#8377;<%= sales.totalSales%>
+      </h2>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+      "
+    >
+      <h4
+        style="
+          padding: 0.3rem 1rem;
+          margin: auto;
+          font-size: 0.9rem;
+        "
+      >
+        Total Orders
+      </h4>
+      <h2 style="padding: 0.8rem 1rem; margin: auto; color: #6c7ae0;">
+        <%= sales.totalOrders%>
+      </h2>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+      "
+    >
+      <h4
+        style="
+          padding: 0.3rem 1rem;
+          margin: auto;
+          font-size: 0.9rem;
+        "
+      >
+        Average Orders Amount
+      </h4>
+      <h2 style="padding: 0.8rem 1rem; margin: auto; color: #6c7ae0;">
+        <%= sales.averageOrderAmount%>
+      </h2>
+    </div>
+  </div>
+  <br><br>
+  Sincerely, Farziengineer Team
+  <br>
+  <br>
+  <b>Note:</b> This email is automatically generated, please do not reply. Any
+  action to be taken further on this information required manual intervention.
+  There is no action to be performed automatically basis of this email.
+  </div>
+</div>
