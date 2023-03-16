@@ -1,0 +1,20 @@
+<p>
+    Hello
+    <%= recipientName %>,
+</p>
+
+The sales summary report for
+<%= recipientName %> for the period of
+    <%= timePeriod %> has been generated. The report provides a detailed analysis of the total sales, average order amount, and total orders for the mentioned period. Please find below a summary of the sales report:
+
+        <%- include('sales-summary', { totalSales: totalSales, averageOrderAmount: averageOrderAmount, totalOrders: totalOrders }) %>
+
+            <br>
+            <br> Sincerely,
+            <p>
+                <%= yourName %>
+            </p>
+
+
+
+            <b>Note:</b> This email is automatically generated, please do not reply. Any action to be taken further on this information required manual intervention. There is no action to be performed automatically basis of this email.

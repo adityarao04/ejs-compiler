@@ -1,0 +1,38 @@
+<p>
+    Hello
+    <%= recipientName %>,
+</p>
+
+<p>
+
+    The Top Cities on basis of orders placed for the period of
+    <%= timePeriod %> have been listed below:
+</p>
+
+<table style="border:1px solid black;text-align:left;">
+    <tr>
+        <th style="border:1px solid black;text-align:center;">City</th>
+        <th style="border:1px solid black;text-align:center;">Orders</th>
+
+    </tr>
+    <% topCities.forEach(product => { %>
+        <tr>
+            <td style="border:1px solid black;text-align:center;">
+                <%= product.city %>
+            </td>
+            <td style="border:1px solid black;text-align:center;">
+                <%= product.count %>
+            </td>
+        </tr>
+        <% }) %>
+
+</table>
+<br>
+<br> Sincerely,
+<p>
+    <%= yourName %>
+</p>
+
+
+
+<b>Note:</b> This email is automatically generated, please do not reply. Any action to be taken further on this information required manual intervention. There is no action to be performed automatically basis of this email.

@@ -9,8 +9,21 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     // res.render('editor');
-    const code = "Shubham";
-    res.render('test.ejs', { code });
+    const sales = {
+        totalSales:"50000",
+        totalOrders:"100",
+        averageOrderAmount:"500",
+    };
+    res.render('topProducts-template.ejs', { sales });
+});
+app.get('/a', (req, res) => {
+    // res.render('editor');
+    const sales = {
+        totalSales:"50000",
+        totalOrders:"100",
+        averageOrderAmount:"500",
+    };
+    res.render('totalSalesEmail.ejs', { sales });
 });
 
 // app.post('/preview', (req, res) => {
